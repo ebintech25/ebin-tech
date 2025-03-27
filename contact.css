@@ -1,22 +1,20 @@
-
-/* Import Font */
-
 /* Global Styles */
 body {
-    background-color: #008970; /* Deep dark green */
+    background-color: #008970;
     font-family: 'Futura pt cond extrabold', sans-serif;
-    color: #d1ff91; /* Neon Green */
+    color: #d1ff91;
     margin: 0;
     padding: 0;
     background-image: url('https://i.ibb.co/4gw759r8/BG-Pattern.png');
-
 }
 
 /* Container */
 .container {
+    width: 100%;
     max-width: 360px;
     margin: auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -38,30 +36,21 @@ body {
 
 /* Form Styling */
 form {
-    background-color: #008970; /* Deep green form background */
+    background-color: #008970;
     padding: 20px;
     border-radius: 12px;
-    border: 1px solid #75d665; /* Soft green border */
+    border: 1px solid #75d665;
+    box-sizing: border-box;
 }
 
 /* Title Styling */
 .title {
-    font-size: 28px;
+    color: #4BEE6C !important;
     font-weight: 900;
-    text-transform: uppercase;
-    line-height: 0.8;}
-
-/* "CONTACT WITH" Styling */
-.title  {
-    color: #4BEE6C !important; /* Neon Green */
-    font-weight: 700;
-    display: block;
     font-size: 28px;
-    font-weight: 900;
     text-transform: uppercase;
     line-height: 0.8;
 }
-
 
 /* Paragraph Styling */
 p {
@@ -82,16 +71,17 @@ p {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .container {
-        padding: 1px;
+        width: 100%;
+        padding: 8px;
     }
 
     form {
-        padding: 0px;
+        padding: 12px;
     }
 
     .title {
-        font-size: 2px;
+        font-size: 20px;
     }
 }
